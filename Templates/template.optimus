@@ -1,0 +1,47 @@
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace Optimus.Tests
+{
+    public partial class GatewayTestSquared
+    {
+        private HttpClient client;   
+
+        {endpoint get}
+        public async Task{endpoint.response.taskreturn} {controller.name}_{endpoint.name}({endpoint.params})
+        {
+            var url = $"{endpoint.url}";
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsAsync<{endpoint.response.httpreturn}>();
+            {return};
+        }
+        {/endpoint}
+        {endpoint post}
+        public async Task{endpoint.response.taskreturn} {controller.name}_{endpoint.name}({endpoint.params})
+        {
+            var url = $"{endpoint.url}";
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsAsync<{endpoint.response.httpreturn}>();
+            {return};
+        }
+        {/endpoint}
+        {endpoint put}
+        public async Task{endpoint.response.taskreturn} {controller.name}_{endpoint.name}({endpoint.params})
+        {
+            var url = $"{endpoint.url}";
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsAsync<{endpoint.response.httpreturn}>();
+            {return};
+        }
+        {/endpoint}
+        {endpoint delete}
+        public async Task{endpoint.response.taskreturn} {controller.name}_{endpoint.name}({endpoint.params})
+        {
+            var url = $"{endpoint.url}";
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsAsync<{endpoint.response.httpreturn}>();
+            {return};
+        }
+        {/endpoint}
+    }
+}
